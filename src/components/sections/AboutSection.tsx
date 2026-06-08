@@ -65,7 +65,7 @@ export function AboutSection() {
           transition={{ duration: 0.7, delay: 0.15 }}
           className="flex flex-col gap-6"
         >
-          <div className="hidden md:block w-full h-[400px]">
+          <div className="hidden md:block w-full h-100">
             <Scene3D />
           </div>
           {/* Stats */}
@@ -73,7 +73,7 @@ export function AboutSection() {
             {STATS.map((stat, i) => (
               <motion.div
                 key={stat.label}
-                className="bg-white/[0.02] border border-white/6 rounded-xl p-5"
+                className="bg-white/2 border border-white/6 rounded-xl p-5"
                 initial={{ opacity: 0, y: 16 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.3 + i * 0.08 }}
