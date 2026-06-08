@@ -26,7 +26,7 @@ function ProjectCardMobile({ project, index }: { project: Project; index: number
       transition={{ duration: 0.6, delay: index * 0.1 }}
     >
       {/* Screenshot en haut */}
-      <div className="relative w-full aspect-[16/10] bg-[#111] overflow-hidden">
+      <div className="relative w-full aspect-16/10 bg-[#111] overflow-hidden">
         <div className="absolute top-0 left-0 right-0 z-10 bg-[#111] px-3.5 py-2 flex items-center gap-2 border-b border-white/6">
           <div className="flex gap-1.5 shrink-0">
             <div className="w-1.5 h-1.5 rounded-full bg-[#ff5f57]" />
@@ -145,7 +145,7 @@ export function ProjectsSection() {
       </div>
 
       {/* Desktop, liste + image sticky */}
-      <div className="hidden md:grid md:grid-cols-2 min-h-[600px]">
+      <div className="hidden md:grid md:grid-cols-2 min-h-150">
         <div>
           {PROJECTS.map((project, i) => (
             <motion.div
@@ -157,7 +157,7 @@ export function ProjectsSection() {
               onMouseEnter={() => setHovered(project.slug)}
               onMouseLeave={() => setHovered(null)}
             >
-              <div className="px-8 md:px-10 py-10 flex flex-col gap-5 transition-colors duration-300 hover:bg-white/[0.02]">
+              <div className="px-8 md:px-10 py-10 flex flex-col gap-5 transition-colors duration-300 hover:bg-white/2">
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex items-baseline gap-4">
                     <span className="text-[11px] text-white/20 tracking-widest shrink-0">
@@ -216,7 +216,7 @@ export function ProjectsSection() {
         </div>
 
         {/* Image sticky desktop */}
-        <div className="flex sticky top-24 self-start items-center justify-center p-10 h-[calc(100vh-6rem)] max-h-[600px]">
+        <div className="flex sticky top-24 self-start items-center justify-center p-10 h-[calc(100vh-6rem)] max-h-150">
           <div className="relative w-full h-full">
             <AnimatePresence mode="wait">
               <motion.div
