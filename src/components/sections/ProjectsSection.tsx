@@ -7,9 +7,9 @@ import { PROJECTS } from '@/lib/data'
 import type { Project } from '@/types'
 
 const chipStyles = {
-  green: 'bg-teal-accent/10 text-teal-accent',
-  blue: 'bg-blue-400/10 text-blue-400',
-  gold: 'bg-gold/10 text-gold',
+  green: { background: 'rgba(93,202,165,0.1)', color: '#5DCAA5' },
+  blue: { background: 'rgba(55,138,221,0.1)', color: '#378ADD' },
+  gold: { background: 'rgba(196,160,80,0.1)', color: '#c4a050' },
 }
 
 // Layout mobile, card complète avec image visible
@@ -123,7 +123,7 @@ export function ProjectsSection() {
             Derniers travaux
           </p>
           <h2 className="font-syne font-black text-5xl tracking-tightest leading-none mb-3">
-            Ce qu&apos;on<br />a construit.
+            Ce que j&apos;ai<br />construit.
           </h2>
           <p className="text-sm text-white/25 italic">
             Bientôt le vôtre ?
@@ -193,7 +193,11 @@ export function ProjectsSection() {
                 <div className="flex items-center justify-between">
                   <div className="flex gap-2">
                     {project.chips.map((chip) => (
-                      <span key={chip.label} className={`text-[11px] rounded-full px-2.5 py-1 ${chipStyles[chip.color]}`}>
+                      <span
+                        key={chip.label}
+                        className="text-[11px] rounded-full px-2.5 py-1"
+                        style={chipStyles[chip.color]}
+                      >
                         {chip.label}
                       </span>
                     ))}
@@ -252,7 +256,7 @@ export function ProjectsSection() {
         </div>
       </div>
 
-      <div className="border-t border-white/6 px-8 md:px-10 py-8 flex items-center justify-between">
+      <div className="hidden md:flex border-t border-white/6 px-8 md:px-10 py-8 items-center justify-between">
         <p className="text-xs text-white/15 max-w-sm">
           Chaque projet est un case study complet avec contexte, process et résultats.
         </p>
