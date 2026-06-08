@@ -11,7 +11,7 @@ const STATS = [
   { value: '24h', label: 'Délai de réponse max' },
 ]
 
-const STACK = ['Next.js', 'TypeScript', 'React', 'GSAP', 'Framer Motion', 'Tailwind']
+const STACK = ['Next.js', 'TypeScript', 'React', 'GSAP', 'Framer Motion', 'Tailwind', 'Node.js']
 
 export function AboutSection() {
   const ref = useRef<HTMLDivElement>(null)
