@@ -2,6 +2,8 @@
 
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
+import Image from 'next/image'
+import { Scene3D } from '@/components/ui/Scene3D'
 
 const STATS = [
   { value: '2+', label: 'Ans d\'expérience' },
@@ -10,7 +12,7 @@ const STATS = [
   { value: '24h', label: 'Délai de réponse max' },
 ]
 
-const STACK = ['Next.js', 'TypeScript', 'React', 'GSAP', 'Framer Motion', 'Tailwind', 'Shopify', 'Sanity']
+const STACK = ['Next.js', 'TypeScript', 'React', 'GSAP', 'Framer Motion', 'Tailwind']
 
 export function AboutSection() {
   const ref = useRef<HTMLDivElement>(null)
@@ -36,10 +38,10 @@ export function AboutSection() {
 
           <div className="flex flex-col gap-4 text-sm text-white/45 leading-relaxed max-w-md">
             <p>
-              Restaurant gastronomique, cabinet d&apos;architectes, couvreur artisan, institut de beauté — peu importe le secteur, le niveau d&apos;exigence visuelle ne devrait pas changer.
+              Restaurant gastronomique, cabinet d&apos;architectes, couvreur artisan, institut de beauté, peu importe le secteur, le niveau d&apos;exigence visuelle ne devrait pas changer.
             </p>
             <p>
-              Je construis des interfaces sur-mesure qui donnent à chaque marque l&apos;identité digitale qu&apos;elle mérite. Pas de template recyclé, pas de junior affecté en sous-main — juste du travail propre, livré à temps.
+              Je construis des interfaces sur-mesure qui donnent à chaque marque l&apos;identité digitale qu&apos;elle mérite. Pas de template recyclé, pas de junior affecté en sous-main, juste du travail propre, livré à temps.
             </p>
             <p>
               Basé en Bretagne, je travaille avec des clients partout en France qui partagent une conviction : un bon site n&apos;est pas une dépense, c&apos;est un investissement.
@@ -64,28 +66,9 @@ export function AboutSection() {
           transition={{ duration: 0.7, delay: 0.15 }}
           className="flex flex-col gap-6"
         >
-          {/* Photo placeholder — remplace src par ta vraie photo */}
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-white/[0.03] border border-white/6 flex items-center justify-center">
-            <div className="text-center">
-              <div className="w-16 h-16 rounded-full bg-white/5 border border-white/10 flex items-center justify-center mx-auto mb-3">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.2)" strokeWidth="1.2" strokeLinecap="round">
-                  <circle cx="12" cy="8" r="4" />
-                  <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
-                </svg>
-              </div>
-              <p className="text-xs text-white/20 uppercase tracking-widest">Ta photo ici</p>
-              {/* Pour ajouter ta photo :
-                  Remplace ce bloc par :
-                  <Image src="/photo.jpg" alt="Ton nom" fill className="object-cover" />
-                  Et place photo.jpg dans /public/
-              */}
-            </div>
-
-            {/* Déco coin gold */}
-            <div className="absolute top-4 right-4 w-2 h-2 rounded-full bg-gold opacity-60" />
-            <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/20 to-transparent" />
+          <div className="hidden md:block w-full h-[400px]">
+            <Scene3D />
           </div>
-
           {/* Stats */}
           <div className="grid grid-cols-2 gap-3">
             {STATS.map((stat, i) => (
