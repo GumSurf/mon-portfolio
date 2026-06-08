@@ -2,7 +2,6 @@
 
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import Image from 'next/image'
 import { Scene3D } from '@/components/ui/Scene3D'
 
 const STATS = [
