@@ -20,11 +20,11 @@ export function HeroSection() {
       />
 
       <div
-        className="absolute -top-48 -right-40 w-[480px] h-[480px] rounded-full pointer-events-none z-0"
+        className="absolute -top-48 -right-40 w-120 h-120 rounded-full pointer-events-none z-0"
         style={{ background: 'radial-gradient(circle, rgba(93,202,165,0.07) 0%, transparent 70%)' }}
       />
       <div
-        className="absolute -bottom-24 -left-20 w-[300px] h-[300px] rounded-full pointer-events-none z-0"
+        className="absolute -bottom-24 -left-20 w-75 h-75 rounded-full pointer-events-none z-0"
         style={{ background: 'radial-gradient(circle, rgba(127,119,221,0.06) 0%, transparent 70%)' }}
       />
 
