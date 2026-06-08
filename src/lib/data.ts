@@ -2,8 +2,8 @@ import type { Project, Service, NavLink } from '@/types'
 
 export const NAV_LINKS: NavLink[] = [
   { label: 'Projets', href: '#projets' },
-  { label: 'Projets', href: '#projets' },
   { label: 'À propos', href: '#apropos' },
+  { label: 'Services', href: '#services' },
 ]
 
 export const PROJECTS: Project[] = [
@@ -19,8 +19,8 @@ export const PROJECTS: Project[] = [
     sector: 'Beauté & bien-être',
     url: 'https://www.ladybeaute.fr',
     chips: [
-      { label: '+40% de RDV en ligne', color: 'green' },
-      { label: 'Score Perf. 96/100', color: 'blue' },
+      { label: 'Perf. 96/100', color: 'green' },
+      { label: 'Next.js 14', color: 'blue' },
     ],
     screenshot: '/projects/lady-beaute.png',
   },
@@ -40,6 +40,23 @@ export const PROJECTS: Project[] = [
       { label: 'Leads qualifiés', color: 'green' },
     ],
     screenshot: '/projects/corrignan.png',
+  },
+  {
+    index: '03',
+    name: 'Cocktail Explorer',
+    slug: 'cocktail-explorer',
+    tags: ['Site vitrine', 'React', 'Recettes de cocktails'],
+    description:
+      'Site de recettes de cocktails avec recherche par ingrédients, animations ludiques et design coloré qui invite à la découverte.',
+    stack: 'React · Tailwind · TypeScript',
+    year: '2024',
+    sector: 'Loisir & gastronomie',
+    url: 'https://cocktail-explorer-xi.vercel.app/',
+    chips: [
+      { label: 'Devis en ligne', color: 'gold' },
+      { label: 'Visibilité locale', color: 'green' },
+    ],
+    screenshot: '/projects/cocktail-explorer.png',
   },
 ]
 
