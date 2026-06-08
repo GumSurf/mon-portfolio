@@ -91,7 +91,7 @@ export function WhyMeSection() {
             className={`rounded-2xl p-7 border ${
               col.type === 'me'
                 ? 'border-gold/30 bg-gold/[0.03] md:-mt-4 md:pb-11'
-                : 'border-white/6 bg-white/[0.015]'
+                : 'border-white/6 bg-white/1.5'
             }`}
             initial={{ opacity: 0, y: 32 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
