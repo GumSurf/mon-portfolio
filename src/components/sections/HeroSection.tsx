@@ -35,7 +35,7 @@ export function HeroSection() {
         >
           <span className="h-2 w-2 animate-pulse rounded-full bg-[#5DCAA5]" />
           <span className="text-xs text-white/50 uppercase tracking-widest">
-            Disponible pour nouveaux projets
+            Disponible pour de nouveaux projets
           </span>
         </motion.div>
 
@@ -88,11 +88,11 @@ export function HeroSection() {
       </div>
 
       <motion.div
-        className="relative z-20 flex items-center justify-between px-8 md:px-10 py-8 mt-16 border-t border-white/5"
+        className="hidden md:flex relative z-20 items-center justify-between px-8 md:px-10 py-8 mt-16 border-t border-white/5"
         {...fadeUp(0.8)}
       >
         <div className="flex gap-2 flex-wrap">
-          {['Next.js', 'React', 'GSAP', 'Shopify'].map((tech) => (
+          {['Next.js', 'TypeScript', 'React', 'GSAP', 'Framer Motion', 'Tailwind', 'Node.js'].map((tech) => (
             <span
               key={tech}
               className="text-[11px] text-white/25 border border-white/8 rounded-full px-3 py-1 uppercase tracking-wider"
