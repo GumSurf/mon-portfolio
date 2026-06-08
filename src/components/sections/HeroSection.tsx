@@ -43,7 +43,7 @@ export function HeroSection() {
           className="font-syne font-black text-[clamp(42px,7vw,72px)] leading-none tracking-tightest mb-6 max-w-3xl"
           {...fadeUp(0.35)}
         >
-          On construit des<br />
+          Je construit des<br />
           sites qui font{' '}
           <span className="text-stroke">bouger</span>
           <br />
@@ -54,7 +54,7 @@ export function HeroSection() {
           className="text-[15px] text-white/40 leading-relaxed max-w-md mb-10"
           {...fadeUp(0.5)}
         >
-          Du site vitrine pour l&apos;entrepreneur local au e-commerce premium —
+          Du site vitrine pour l&apos;entrepreneur local au e-commerce premium,
           des interfaces qui convertissent et qui marquent.
         </motion.p>
 

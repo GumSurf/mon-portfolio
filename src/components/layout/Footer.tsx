@@ -24,7 +24,7 @@ export function Footer() {
         </div>
 
         <p className="text-xs text-white/15">
-          © {new Date().getFullYear()} Gabriel Christe. — Fait avec Next.js & GSAP
+          © {new Date().getFullYear()} Gabriel Christe., Fait avec Next.js & GSAP
         </p>
       </div>
     </footer>

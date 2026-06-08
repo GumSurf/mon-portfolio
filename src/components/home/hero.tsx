@@ -22,7 +22,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           className="max-w-2xl text-[clamp(42px,7vw,64px)] font-extrabold leading-[1] tracking-tight"
         >
-          On construit des <br />
+          Je construis des <br />
           sites qui font{" "}
           <span className="text-transparent [-webkit-text-stroke:1.5px_rgba(255,255,255,0.35)]">
             bouger
@@ -33,7 +33,7 @@ export default function Hero() {
 
         {/* TEXT */}
         <p className="mt-6 max-w-md text-sm leading-7 text-white/50">
-          Du site vitrine pour l'entrepreneur local au e-commerce premium — des interfaces qui convertissent et qui marquent.
+          Du site vitrine pour l'entrepreneur local au e-commerce premium, des interfaces qui convertissent et qui marquent.
         </p>
 
         {/* ACTIONS */}

@@ -10,11 +10,11 @@ const syne = Syne({
 })
 
 export const metadata: Metadata = {
-  title: 'Gabriel Christe — Développeur web freelance',
+  title: 'Gabriel Christe, Développeur web freelance',
   description:
-    'Du site vitrine pour l\'entrepreneur local au e-commerce premium — des interfaces qui convertissent et qui marquent.',
+    'Du site vitrine pour l\'entrepreneur local au e-commerce premium, des interfaces qui convertissent et qui marquent.',
   openGraph: {
-    title: 'Gabriel Christe — Développeur web freelance',
+    title: 'Gabriel Christe, Développeur web freelance',
     description: 'Des interfaces qui convertissent et qui marquent.',
     type: 'website',
   },

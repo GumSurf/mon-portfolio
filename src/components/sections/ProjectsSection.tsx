@@ -12,7 +12,7 @@ const chipStyles = {
   gold: 'bg-gold/10 text-gold',
 }
 
-// Layout mobile — card complète avec image visible
+// Layout mobile, card complète avec image visible
 function ProjectCardMobile({ project, index }: { project: Project; index: number }) {
   const ref = useRef<HTMLDivElement>(null)
   const inView = useInView(ref, { once: true, margin: '-10%' })
@@ -41,7 +41,7 @@ function ProjectCardMobile({ project, index }: { project: Project; index: number
           src={project.screenshot}
           alt={`Capture d'écran de ${project.name}`}
           fill
-          className="object-cover object-top pt-7"
+          className="object-cover object-top pt-8"
           sizes="100vw"
         />
       </div>
@@ -50,7 +50,7 @@ function ProjectCardMobile({ project, index }: { project: Project; index: number
       <div className="px-6 py-8 flex flex-col gap-4">
         <div className="flex items-start justify-between">
           <div>
-            <span className="text-[11px] text-white/20 tracking-widest block mb-2">{project.index} —</span>
+            <span className="text-[11px] text-white/20 tracking-widest block mb-2">{project.index},</span>
             <h3 className="font-syne font-black text-3xl tracking-tighter leading-tight">
               {project.name}
             </h3>
@@ -137,14 +137,14 @@ export function ProjectsSection() {
         </span>
       </motion.div>
 
-      {/* Mobile — cards classiques */}
+      {/* Mobile, cards classiques */}
       <div className="md:hidden">
         {PROJECTS.map((project, i) => (
           <ProjectCardMobile key={project.slug} project={project} index={i} />
         ))}
       </div>
 
-      {/* Desktop — liste + image sticky */}
+      {/* Desktop, liste + image sticky */}
       <div className="hidden md:grid md:grid-cols-2 min-h-[600px]">
         <div>
           {PROJECTS.map((project, i) => (
@@ -161,7 +161,7 @@ export function ProjectsSection() {
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex items-baseline gap-4">
                     <span className="text-[11px] text-white/20 tracking-widest shrink-0">
-                      {project.index} —
+                      {project.index},
                     </span>
                     <h3 className={`font-syne font-black text-3xl md:text-4xl tracking-tighter leading-tight transition-colors duration-300 ${
                       hovered === project.slug ? 'text-white' : 'text-white/60'

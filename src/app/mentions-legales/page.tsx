@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Mentions légales — Gabriel Christe',
+  title: 'Mentions légales, Gabriel Christe',
   description: 'Mentions légales et politique de confidentialité de Gabriel Christe.',
   robots: { index: false },
 }
@@ -85,7 +85,7 @@ const SECTIONS = [
       {
         subtitle: 'Cookies',
         text: [
-          "Ce site n'utilise pas de cookies à des fins publicitaires ou de tracking. Calendly peut déposer ses propres cookies lors de l'utilisation du widget de réservation — consultez leur politique de confidentialité sur calendly.com.",
+          "Ce site n'utilise pas de cookies à des fins publicitaires ou de tracking. Calendly peut déposer ses propres cookies lors de l'utilisation du widget de réservation, consultez leur politique de confidentialité sur calendly.com.",
         ],
       },
       {

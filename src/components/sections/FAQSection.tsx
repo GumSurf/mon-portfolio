@@ -10,11 +10,11 @@ const FAQ = [
   },
   {
     q: 'Combien coûte un site web ?',
-    a: 'Un site vitrine démarre à partir de 800€, un e-commerce à partir de 2 500€. Chaque projet est unique — je préfère échanger 30 min sur votre besoin avant de chiffrer pour vous donner un prix juste, pas un devis au doigt mouillé.',
+    a: 'Un site vitrine démarre à partir de 800€, un e-commerce à partir de 2 500€. Chaque projet est unique, je préfère échanger 30 min sur votre besoin avant de chiffrer pour vous donner un prix juste, pas un devis au doigt mouillé.',
   },
   {
     q: 'Quels sont vos délais habituels ?',
-    a: 'Comptez 2 à 3 semaines pour un site vitrine, 4 à 6 semaines pour un e-commerce. Ces délais incluent les allers-retours de validation. Je tiens mes deadlines — c\'est non-négociable.',
+    a: 'Comptez 2 à 3 semaines pour un site vitrine, 4 à 6 semaines pour un e-commerce. Ces délais incluent les allers-retours de validation. Je tiens mes deadlines, c\'est non-négociable.',
   },
   {
     q: 'Je n\'ai pas encore de logo ni de charte graphique, est-ce un problème ?',

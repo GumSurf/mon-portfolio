@@ -5,7 +5,7 @@ import { motion, useInView } from 'framer-motion'
 
 const MY_ADVANTAGES = [
   'Interlocuteur unique du brief à la livraison',
-  'Design premium — niveau awwwards',
+  'Design premium, niveau awwwards',
   'Code propre, performant, maintenable',
   'Délais tenus et transparence totale',
   'SEO technique intégré dès le départ',

@@ -47,7 +47,7 @@ export function PricingSection() {
             Une idée<br />du budget.
           </h2>
           <p className="text-sm text-white/35 max-w-xs leading-relaxed">
-            Chaque projet est unique. Ces fourchettes donnent un repère — on affine ensemble lors d&apos;un appel de 30 min.
+            Chaque projet est unique. Ces fourchettes donnent un repère, on affine ensemble lors d&apos;un appel de 30 min.
           </p>
         </div>
       </motion.div>

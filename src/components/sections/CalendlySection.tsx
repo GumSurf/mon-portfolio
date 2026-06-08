@@ -45,7 +45,7 @@ export function CalendlySection() {
 
       <div className="grid md:grid-cols-2 gap-16 items-start">
 
-        {/* Colonne gauche — texte */}
+        {/* Colonne gauche, texte */}
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 24 }}
@@ -54,11 +54,11 @@ export function CalendlySection() {
         >
           <p className="text-[11px] text-white/25 uppercase tracking-widest mb-4">Démarrer</p>
           <h2 className="font-syne font-black text-5xl tracking-tightest leading-none mb-6">
-            On démarre<br />
+            Je démarre<br />
             <span className="text-stroke">quelque chose ?</span>
           </h2>
           <p className="text-sm text-white/40 leading-relaxed mb-8 max-w-sm">
-            Réservez un appel découverte de 30 minutes. On parle de votre projet,
+            Réservez un appel découverte de 30 minutes. Je parle de votre projet,
             de vos objectifs, et je vous donne une première estimation sans engagement.
           </p>
 
@@ -75,7 +75,7 @@ export function CalendlySection() {
             ))}
           </ul>
 
-          {/* Fallback mobile — bouton direct */}
+          {/* Fallback mobile, bouton direct */}
           <a
             href={CALENDLY_URL}
             target="_blank"
@@ -99,7 +99,7 @@ export function CalendlySection() {
           </p>
         </motion.div>
 
-        {/* Colonne droite — widget Calendly habillé */}
+        {/* Colonne droite, widget Calendly habillé */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
