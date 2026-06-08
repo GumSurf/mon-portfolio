@@ -142,7 +142,7 @@ export function CalendlySection() {
           </div>
 
           {/* Ligne déco gold en bas */}
-          <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/20 to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-gold/20 to-transparent" />
         </motion.div>
 
       </div>
