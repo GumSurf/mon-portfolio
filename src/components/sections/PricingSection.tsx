@@ -59,7 +59,7 @@ export function PricingSection() {
             className={`rounded-2xl p-7 border flex flex-col gap-5 transition-colors ${
               offer.highlight
                 ? 'border-gold/25 bg-gold/[0.03]'
-                : 'border-white/6 bg-white/[0.015] hover:bg-white/[0.03]'
+                : 'border-white/6 bg-white/1.5 hover:bg-white/3'
             }`}
             initial={{ opacity: 0, y: 24 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
