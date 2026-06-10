@@ -17,6 +17,14 @@ export const metadata: Metadata = {
     title: 'Gabriel Christe, Développeur web freelance',
     description: 'Des interfaces qui convertissent et qui marquent.',
     type: 'website',
+    images: [
+      {
+        url: "projects/portfolio-gabrel-christe.png",
+        width: 1200,
+        height: 630,
+        alt: "Preview du site",
+      },
+    ],
   },
 }
 
