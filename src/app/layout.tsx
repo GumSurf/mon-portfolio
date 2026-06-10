@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: "projects/portfolio-gabrel-christe.png",
+        url: "/public/projects/portfolio-gabrel-christe.png",
         width: 1200,
         height: 630,
         alt: "Preview du site",
