@@ -6,7 +6,6 @@ export const metadata: Metadata = {
   description: 'Mentions légales et politique de confidentialité de Gabriel Christe.',
   robots: { index: false },
 }
-
 const SECTIONS = [
   {
     id: 'mentions',
@@ -15,12 +14,12 @@ const SECTIONS = [
       {
         subtitle: 'Éditeur du site',
         text: [
-          'Nom : [TON NOM COMPLET]',
-          'Statut : Auto-entrepreneur / [TON STATUT JURIDIQUE]',
-          'SIRET : [TON NUMÉRO SIRET]',
-          'Adresse : [TON ADRESSE]',
+          'Nom : Gabriel Christe',
+          'Statut : Auto-entrepreneur',
+          'SIRET : 98342235300018',
+          'Adresse : contact@gabrielchriste.fr',
           'Email : contact@gabrielchriste.fr',
-          'Téléphone : [TON NUMÉRO]',
+          'Téléphone : +33 6 38 87 05 62',
         ],
       },
       {
@@ -34,7 +33,8 @@ const SECTIONS = [
       {
         subtitle: 'Propriété intellectuelle',
         text: [
-          "L'ensemble du contenu de ce site (textes, visuels, code) est la propriété exclusive de [TON NOM]. Toute reproduction, même partielle, est interdite sans autorisation préalable.",
+          "L'ensemble du contenu présent sur ce site (textes, images, éléments graphiques, code source et réalisations) est la propriété de Gabriel Christe.",
+          "Toute reproduction, représentation ou utilisation sans autorisation préalable est interdite.",
         ],
       },
     ],
@@ -44,31 +44,42 @@ const SECTIONS = [
     title: 'Politique de confidentialité',
     content: [
       {
-        subtitle: 'Données collectées',
+        subtitle: 'Collecte des données',
         text: [
-          'Ce site collecte les données suivantes dans le cadre de la prise de contact :',
-          '• Nom et prénom',
-          '• Adresse email',
-          '• Contenu du message',
-          'Ces données sont collectées via le formulaire de contact et/ou Calendly (calendly.com).',
+          "Ce site ne collecte pas directement de données personnelles via un formulaire de contact.",
+          "Toutefois, un service de prise de rendez-vous externe, Calendly, est intégré au site afin de permettre aux visiteurs de réserver un échange.",
+        ],
+      },
+      {
+        subtitle: 'Données traitées via Calendly',
+        text: [
+          "Lors de la prise de rendez-vous via Calendly, certaines données peuvent être collectées :",
+          "• Nom et prénom",
+          "• Adresse email",
+          "• Informations renseignées lors de la réservation",
+          "• Informations liées au rendez-vous choisi",
+          "Ces données sont traitées par Calendly conformément à leur politique de confidentialité.",
         ],
       },
       {
         subtitle: 'Finalité du traitement',
         text: [
-          'Les données collectées sont utilisées uniquement pour répondre à vos demandes de contact et gérer les rendez-vous. Elles ne sont ni vendues, ni transmises à des tiers à des fins commerciales.',
+          "Les données collectées via Calendly sont utilisées uniquement pour organiser les rendez-vous, préparer les échanges et répondre aux demandes des visiteurs.",
+          "Elles ne sont pas vendues ni utilisées à des fins commerciales sans consentement.",
         ],
       },
       {
-        subtitle: 'Base légale',
+        subtitle: 'Cookies',
         text: [
-          'Le traitement est basé sur votre consentement explicite lors de la prise de contact (RGPD, art. 6.1.a).',
+          "L'intégration de Calendly peut nécessiter l'utilisation de cookies ou technologies similaires pour assurer le fonctionnement du service.",
+          "Pour plus d'informations, consultez la politique de confidentialité de Calendly.",
         ],
       },
       {
-        subtitle: 'Durée de conservation',
+        subtitle: 'Hébergement et services tiers',
         text: [
-          'Les données sont conservées 3 ans à compter du dernier contact, conformément aux recommandations de la CNIL.',
+          "Le site est hébergé par Vercel Inc.",
+          "Certains services tiers peuvent traiter des données techniques nécessaires au fonctionnement du site.",
         ],
       },
       {
@@ -77,21 +88,16 @@ const SECTIONS = [
           "Conformément au RGPD, vous disposez des droits suivants :",
           "• Droit d'accès à vos données",
           "• Droit de rectification",
-          "• Droit à l'effacement ('droit à l'oubli')",
+          "• Droit à l'effacement",
           "• Droit d'opposition",
-          "Pour exercer ces droits, contactez : contact@gabrielchriste.fr",
-        ],
-      },
-      {
-        subtitle: 'Cookies',
-        text: [
-          "Ce site n'utilise pas de cookies à des fins publicitaires ou de tracking. Calendly peut déposer ses propres cookies lors de l'utilisation du widget de réservation, consultez leur politique de confidentialité sur calendly.com.",
+          "Pour exercer vos droits concernant vos données personnelles, contactez : contact@gabrielchriste.fr",
         ],
       },
       {
         subtitle: 'Réclamation',
         text: [
-          'En cas de litige, vous pouvez contacter la CNIL : www.cnil.fr',
+          "Vous pouvez adresser une réclamation auprès de la CNIL :",
+          "https://www.cnil.fr",
         ],
       },
     ],
