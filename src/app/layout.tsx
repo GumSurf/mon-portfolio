@@ -10,21 +10,34 @@ const syne = Syne({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.gabrielchriste.fr/'),
+
   title: 'Gabriel Christe, Développeur web freelance',
   description:
-    'Du site vitrine pour l\'entrepreneur local au e-commerce premium, des interfaces qui convertissent et qui marquent.',
+    "Du site vitrine pour l'entrepreneur local au e-commerce premium, des interfaces qui convertissent et qui marquent.",
+
   openGraph: {
     title: 'Gabriel Christe, Développeur web freelance',
     description: 'Des interfaces qui convertissent et qui marquent.',
+    url: 'https://www.gabrielchriste.fr/',
+    siteName: 'Gabriel Christe',
+    locale: 'fr_FR',
     type: 'website',
     images: [
       {
-        url: "/public/projects/portfolio-gabrel-christe.png",
+        url: '/projects/portfolio-gabrel-christe.png',
         width: 1200,
         height: 630,
-        alt: "Preview du site",
+        alt: 'Preview du site Gabriel Christe',
       },
     ],
+  },
+
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Gabriel Christe, Développeur web freelance',
+    description: 'Des interfaces qui convertissent et qui marquent.',
+    images: ['/projects/portfolio-gabrel-christe.png'],
   },
 }
 
